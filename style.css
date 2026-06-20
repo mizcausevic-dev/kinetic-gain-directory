@@ -1,13 +1,17 @@
 :root {
-  --accent-50:  #f5f3ff;
-  --accent-100: #ede9fe;
-  --accent-200: #ddd6fe;
-  --accent-400: #a78bfa;
-  --accent-500: #8b5cf6;
-  --accent-600: #7c3aed;
-  --accent-700: #6d28d9;
-  --accent-800: #5b21b6;
-  --accent-900: #4c1d95;
+  /* Warm-ink de-purple stopgap (Task 1b, 2026-06-20). Oxblood sourced from apex
+     /site/assets/tokens.css (--seal: #C0492F); light tints + hover shades are
+     derived from it via color-mix (no new brand hex invented). The full canonical
+     warm-ink skin is applied estate-wide in Task 2 (kg-theme-shell). */
+  --accent-50:  color-mix(in srgb, #C0492F 6%, #fff);
+  --accent-100: color-mix(in srgb, #C0492F 11%, #fff);
+  --accent-200: color-mix(in srgb, #C0492F 20%, #fff);
+  --accent-400: #C0492F;
+  --accent-500: #C0492F;
+  --accent-600: #C0492F;
+  --accent-700: #C0492F;
+  --accent-800: color-mix(in srgb, #C0492F 84%, #000);
+  --accent-900: color-mix(in srgb, #C0492F 70%, #000);
 
   --slate-50: #f8fafc;
   --slate-100: #f1f5f9;
